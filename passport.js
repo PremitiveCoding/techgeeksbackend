@@ -3,11 +3,14 @@ const GithubStrategy = require("passport-github2").Strategy;
 const FacebookStrategy = require("passport-facebook").Strategy;
 const passport = require("passport");
 
+const GOOGLE_CLIENT_ID ="1074024476236-525jervf14aimahao0pqnetf7dshvm1h.apps.googleusercontent.com";
+const GOOGLE_CLIENT_SECRET = "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";
+
 passport.use(
   new GoogleStrategy(
     {
-      clientID: process.env.GOOGLE_CLIENT_ID,
-      clientSecret: process.env.GOOGLE_CLIENT_SECRET,
+      clientID: GOOGLE_CLIENT_ID,
+      clientSecret: GOOGLE_CLIENT_SECRET,
       callbackURL: "/auth/google/callback",
     },
     function (accessToken, refreshToken, profile, done) {
