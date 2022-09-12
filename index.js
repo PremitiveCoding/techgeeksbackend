@@ -22,7 +22,6 @@ app.use(
 );
 
 app.use("/auth", authRoute);
-console.log("ok ok ");
 
 app.listen("https://techgeeks.onrender.com", () => {
   console.log("Server is running!");
