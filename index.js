@@ -24,6 +24,6 @@ app.use(
 app.use("/auth", authRoute);
 console.log("ok ok ");
 
-app.listen("5000", () => {
+app.listen("https://techgeeks.onrender.com", () => {
   console.log("Server is running!");
 });
